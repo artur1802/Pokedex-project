@@ -38,6 +38,7 @@ const typeColors = {
         fetch (`https://pokeapi.co/api/v2/pokemon/${value}`)
     .then(data => data.json())
     .then(response => renderPokemonData(response))
+    .catch(err => renderNotFound())
     
     }
 
@@ -98,6 +99,14 @@ pokeStats.appendChild(statElement);
 
 });
 
-    
-
 }
+const renderNotFound = () => {
+
+    pokeName.textContent = 'No found';
+    pokeImg.setAttribute('src','https://www.pngitem.com/pimgs/m/30-302283_pikachu-pokmon-go-silhouette-drawing-whos-that-pokemon.png');
+    pokeImg.style.background = '#fff';
+    pokeTypes.innerHTML = '';
+    pokeStats.innerHTML = '';
+    pokeId.textContent = '';
+}
+

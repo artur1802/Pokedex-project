@@ -5,47 +5,57 @@ body {
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
-h1>img {
-    width: 500px;
-    height: 400px;
-    position: relative;
-    
 
-}
-
-
-form {
-    width: 200px;
-    margin: 20px auto;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    
-}
-button{
+#container {
 
     display: flex;
-    margin: 5px;
-    padding: 3px;
-    align-self: center;
-    border-radius: 4px;
+    align-content: center;
+    align-items: center;
+   flex-direction: column;
+    gap: 10px;
+
 }
 
+#form {
+display: flex;
+flex-direction:column;
+align-items: center;
+justify-content: center;
+gap: 7px;
+}
+
+
+
+#pokemonimg {
+
+    width: 450px;
+    height: 250px;
+}
+
+
+
+
 .poke-card {
-    position: relative;
-    height: fit-content;
-    max-width: 300px;
+position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:fit-content;
+    min-width: 250px;
+    max-width: fit-content;
+    
     border-radius: 4px;
     color: black;
     text-align: center;
     padding: 10px;
     margin: 0 auto;
-    background-color: azure;
+    background-color: rgb(228, 218, 218);
     border: 1px solid black;
 }
-
+input {
+    height: 20px;
+}
 .poke-card::before {
     content: '';
     background: radial-gradient(black 33%, transparent 33%);
@@ -61,18 +71,29 @@ button{
 }
 
 .img-container {
-    position: relative;
+    display: flex;
+   justify-content: center;
     width: 100px;
-    margin: 10px;
+    margin: 10px auto;
 
 }
 
-.poke-static div {
+.imagepika {
+    
+
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 50%;
+
+}
+
+.poke-stats div {
     display: flex;
     justify-content: space-between;
     align-content: space-between;
     padding: 5px;
-    font-size: 19px;
+    font-size: 18px;
 }
 
 

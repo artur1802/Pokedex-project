@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,35 +8,43 @@
     <title>My pokedex</title>
     <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    
-    
+
+
 </head>
+
 <body>
-    <h1>
-       <img src="https://scghobby.com/wp-content/uploads/2021/03/Pokemon-Logo.png" alt="">
+    <div id="container">
 
-    <form action=""  >
-        <input type="text" name="pokemon" autocomplete="off">
-        <button type="button" name="button" onclick="searchPokemon(event)">Get Pokemon</button>
-    </form>
+        <div id="pokemoncontainer">
+            <img id="pokemonimg" src="https://scghobby.com/wp-content/uploads/2021/03/Pokemon-Logo.png" alt="">
+        </div>
 
-    <div  data-poke-card class="poke-card">
-        <div data-poke-name>Pokedex</div>
+
+        <div id="form">
+            
+                <input type="text" name="pokemon" autocomplete="off">
+                <button type="button" name="button" onclick="searchPokemon(event)">Get Pokemon</button>
+            
+        </div>
+
+
+        <div data-poke-card class="poke-card">
+            <div data-poke-name>Pokedex</div>
             <div data-poke-img-container class="img-container">
-                <img data-poke-img class='imagepika'src="https://www.pngitem.com/pimgs/m/30-302283_pikachu-pokmon-go-silhouette-drawing-whos-that-pokemon.png" >
+                <img data-poke-img class="imagepika" src="https://www.pngitem.com/pimgs/m/30-302283_pikachu-pokmon-go-silhouette-drawing-whos-that-pokemon.png">
 
             </div>
 
-        <div data-poke-id></div>
-        <div data-poke-types class="poke-types"></div>
-        <div data-poke-stats class="poke-stats"></div>
+            <div data-poke-id></div>
+            <div data-poke-types class="poke-types"></div>
+            <div data-poke-stats class="poke-stats"></div>
 
-
-        
+        </div>
 
     </div>
 
-    
+
     <script src="app.js" type="text/javascript"></script>
 </body>
+
 </html>
